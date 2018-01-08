@@ -1,4 +1,5 @@
 
+// File Saver
 var saveAs = saveAs || (function(view) {
 	"use strict";
 	// IE <10 is explicitly unsupported
@@ -172,7 +173,6 @@ if (typeof module !== "undefined" && module.exports) {
     return saveAs;
   });
 }
-
 
 (function( $ ) {
   'use strict';
@@ -370,6 +370,5 @@ if (typeof module !== "undefined" && module.exports) {
 		var blob = new Blob([data], {'type': type});
 		saveAs(blob, tableName+"."+format);
 	}
-
 
 })( jQuery );
